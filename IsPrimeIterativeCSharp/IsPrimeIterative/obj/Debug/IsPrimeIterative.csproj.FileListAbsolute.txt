@@ -1,0 +1,7 @@
+C:\Users\jakca\OneDrive\Desktop\CSharp\IsPrimeIterative\IsPrimeIterative\bin\Debug\IsPrimeIterative.exe.config
+C:\Users\jakca\OneDrive\Desktop\CSharp\IsPrimeIterative\IsPrimeIterative\bin\Debug\IsPrimeIterative.exe
+C:\Users\jakca\OneDrive\Desktop\CSharp\IsPrimeIterative\IsPrimeIterative\bin\Debug\IsPrimeIterative.pdb
+C:\Users\jakca\OneDrive\Desktop\CSharp\IsPrimeIterative\IsPrimeIterative\obj\Debug\IsPrimeIterative.csproj.AssemblyReference.cache
+C:\Users\jakca\OneDrive\Desktop\CSharp\IsPrimeIterative\IsPrimeIterative\obj\Debug\IsPrimeIterative.csproj.CoreCompileInputs.cache
+C:\Users\jakca\OneDrive\Desktop\CSharp\IsPrimeIterative\IsPrimeIterative\obj\Debug\IsPrimeIterative.exe
+C:\Users\jakca\OneDrive\Desktop\CSharp\IsPrimeIterative\IsPrimeIterative\obj\Debug\IsPrimeIterative.pdb
