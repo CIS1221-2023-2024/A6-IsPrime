@@ -1,0 +1,7 @@
+C:\Users\jakca\OneDrive\Desktop\CSharp\IsPrimeRecursiveCSharp\IsPrimeRecursiveCSharp\bin\Debug\IsPrimeRecursiveCSharp.exe.config
+C:\Users\jakca\OneDrive\Desktop\CSharp\IsPrimeRecursiveCSharp\IsPrimeRecursiveCSharp\bin\Debug\IsPrimeRecursiveCSharp.exe
+C:\Users\jakca\OneDrive\Desktop\CSharp\IsPrimeRecursiveCSharp\IsPrimeRecursiveCSharp\bin\Debug\IsPrimeRecursiveCSharp.pdb
+C:\Users\jakca\OneDrive\Desktop\CSharp\IsPrimeRecursiveCSharp\IsPrimeRecursiveCSharp\obj\Debug\IsPrimeRecursiveCSharp.csproj.AssemblyReference.cache
+C:\Users\jakca\OneDrive\Desktop\CSharp\IsPrimeRecursiveCSharp\IsPrimeRecursiveCSharp\obj\Debug\IsPrimeRecursiveCSharp.csproj.CoreCompileInputs.cache
+C:\Users\jakca\OneDrive\Desktop\CSharp\IsPrimeRecursiveCSharp\IsPrimeRecursiveCSharp\obj\Debug\IsPrimeRecursiveCSharp.exe
+C:\Users\jakca\OneDrive\Desktop\CSharp\IsPrimeRecursiveCSharp\IsPrimeRecursiveCSharp\obj\Debug\IsPrimeRecursiveCSharp.pdb
