@@ -8,4 +8,4 @@ Things to note can be key differences when working with 2 different languages an
 We hope you find our code satisfactory.
 
 
-Note: Jurgen's Projects are handled using VS Code, while Jake's Projects are using VS. Therefore make sure to read the ReadMe in the CSharp Folders to undertstand how to see and run the code :)
+Note: Jurgen's Projects are handled using VS Code, so all that is needed is to open the .py files using VS Code, while Jake's Projects are using VS. Therefore make sure to read the ReadMe in the CSharp Folders to undertstand how to see and run the code :)
