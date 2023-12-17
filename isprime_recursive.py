@@ -16,7 +16,7 @@ def isPrime(n, i = 2):
     # Check for next divisor
     return isPrime(n, i + 1)
 
-def prime_factors(n, counter = 2, list_of_primes = None): #shows you all prime factors of a given number
+def prime_factors(n, counter = 2, list_of_primes = None): #shows all prime factors of a given number
         
      if list_of_primes == None: # list is reset per loop in the menu
          list_of_primes = []
