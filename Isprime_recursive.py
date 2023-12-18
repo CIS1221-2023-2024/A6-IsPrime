@@ -37,7 +37,7 @@ def all_primes_up_to(n, counter=2, list_of_primes = None): #shows you a list of 
     if counter == n+1: # checks whether the counter has reached the number given (+1 so it includes the number)
          return list_of_primes #returns the list of primes
 
-    if isPrime(counter) == True: # checks if the counter is prime
+    if isPrime(counter): # checks if the counter is prime
          list_of_primes.append(counter)  #adds the value of the counter in the list
 
     return all_primes_up_to(n, counter +1, list_of_primes) #returns the method but incremen
@@ -55,12 +55,18 @@ def nth_prime(n, counter = 2, list_of_primes = [],):
           
      return nth_prime(n,counter + 1) # recursive call
 
-def primes_in_range(start, end):
+def primes_in_range(start, end, list_of_primes = None):
+    
+    if list_of_primes == None: # the list is reset per loop in the menu
+         list_of_primes = []
 
+    if start>end: #Checks if the loop exceeds the upper limit
+        return list_of_primes
+        
     if start <= end:
         if isPrime(start):
-            print(start)
-        primes_in_range(start + 1, end)
+            list_of_primes.append(start)
+        return primes_in_range(start + 1, end, list_of_primes)
         # checks if prime for start then increments until end is reached
      
 def menu(option = 0): 
