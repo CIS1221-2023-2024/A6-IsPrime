@@ -1,0 +1,3 @@
+# Challenger Modifications
+
+I provided these files to clearly indicate how and why I made the modifications in your project. I used timeit module to measure the execution time of different algorithms which I think would made the program more efficient. I also indicated the input boundaries that every algorithm could handle. I will continue to do this for the other parts of the program. Do not hesitate to let me know what you think.
