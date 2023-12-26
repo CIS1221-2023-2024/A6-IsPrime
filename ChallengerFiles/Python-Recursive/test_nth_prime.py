@@ -1,7 +1,8 @@
 ''' 
 Aim: This file was put up to test the execution times of finding nth prime algorithms. Algorithms are similar in structure, although one uses a list and another does not.
 
-Observations: Both algorithms seem to break off after the 163rd prime number, similar execution times.
+Observations: Both algorithms seem to break off after the 163rd prime number, similar execution times. 
+Edit: The code works up to the number 422, after it reaches 423 it exceeds the recursion depth
 
 Conclusion: Decided that original code will be kept'''
 

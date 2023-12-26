@@ -2,6 +2,7 @@
 Aim: to test execution times of prime numbers to a certain number
 
 Observations: both recursive algorithms only work till up to 970
+Edit: Both algorithms work above 970
 
 Conclusion: Execution times of original algorithm are slightly superior, will not change original code.'''
 
