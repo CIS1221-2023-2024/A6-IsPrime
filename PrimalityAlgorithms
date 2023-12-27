@@ -1,0 +1,122 @@
+import timeit
+import random 
+
+'''I have created this file to indicate some important mathematical algorithms when dealing with prime numbers that go further than just the
+recursive and iterative paradigms, and that they should be included somewhere in the project.
+These are known as the Sieve of Eratosthenes, Miller-Rabin, and Fermat primality test.
+
+*Sieve of Eratosthenes: A method from 276BC yet it is simple and efficient. It finds primes by going through a list of possible numbers
+and eliminates multiples of already found primes' multiples as composite. 
+A helpful video is: https://www.youtube.com/watch?v=klcIklsWzrY&ab_channel=KhanAcademyLabs
+
+*Miller-Rabin primality: This method tests if a number is not prime. It finds n-1 =2^k*m where n is the supposed prime, and k and m are integers.
+The algorithm then keeps dividing n-1 by base 2 and powers. Once it reaches a non-whole result, it continues with the original equation. Then using 
+1 < a < n-1 for some random a, then bo = a^m mod n is computed. The algorithm is listed below.
+A helpful video is: https://www.youtube.com/watch?v=qdylJqXCDGs&ab_channel=Theoretically
+
+*Fermat Method: A primality test based on Fermat's Little Theorem. It basically states that if n is a prime number, then for every number a, 1 < a < n-1,
+then a^(n-1) % n = 1 (the remainder of a to the power of n-1 divided by n is 1)
+A helpful video is: https://www.youtube.com/watch?v=w0ZQvZLx2KA&ab_channel=Socratica 
+
+'''
+# This is an implementation in python though one can explore these same algorithms in other languages.
+
+def SieveOfEratosthenes(n):
+    # Creating a boolean array up to n+1 and setting all entries as true. A value in prime[i] will be false if i is prime, else it is true.
+    prime = [True for i in range(n + 1)]
+    p = 2
+    plist = []
+    
+    # square of p makes the algorithm much faster
+    while p * p <= n:
+        # If prime[p] is not changed, then it is a prime
+        if prime[p] == True:
+            # Updates all multiples of p in range from p to n+1 using p as step
+            for i in range(p * p, n + 1, p):
+                prime[i] = False
+        p += 1
+
+    for p in range(2, n + 1):
+        if prime[p]:
+            plist.append(p)
+
+    print(plist)
+
+    
+def miller_rabin(n, k = 5):
+    # 5 is default number of rounds
+    if n<= 1:
+        return 'Number is not prime'
+    if n == 2 or n ==3:
+        return 'Number is prime'
+
+    if n % 2 == 0:
+        return 'Number is not prime'
+    
+    r, s = 0, n -1 
+    # r is assigned 0, s is assigned n - 1
+    
+    while s % 2 == 0:
+        r += 1
+        s //= 2
+        
+    for _ in range(k):
+        # generating a random number between 2 and n-1
+        a = random.randint(2, n - 1)
+        
+        #pow() finds x which is the remainder of a^s divided by n
+        x = pow(a, s, n)
+        
+        if x == 1 or x == n - 1:
+            continue
+        
+        for _ in range(r - 1):
+            x = pow(x, 2, n)
+            if x == n - 1:
+                break
+        else:
+            return 'Number is not prime'
+        
+    return 'Number is prime' 
+
+def fermat_prime(n, k):
+    
+    if n == 2:
+        return 'Number is prime.'
+
+    # if n is 1 or even
+    if n == 1 or n % 2 == 0:
+        return 'Number is not prime'
+
+    for i in range(k):
+        # generates random number in range as a 
+        a = random.randint(1, n-1)
+
+		#Fermat's little theorem
+        if pow(a, n-1) % n != 1:
+            return 'Number is not prime'
+        
+    return 'Number is prime'
+
+if __name__ == '__main__': 
+    
+    n = int(input('Input number: '))
+    
+    # timing the three algorithms
+    print("Following are the prime numbers smaller than or equal to", n) 
+    s1 = timeit.default_timer()
+    SieveOfEratosthenes(n) 
+    time = timeit.default_timer() - s1
+    print(f'Time Sieve of Eratosthenes took to execute: {time}\n')    
+    
+    s2 = timeit.default_timer()
+    print(miller_rabin(n, 5))
+    time = timeit.default_timer() - s2
+    print(f'Time Rabin-Miller took to execute: {time}\n')
+    
+    s3 = timeit.default_timer()
+    print(fermat_prime(n, 5))
+    time = timeit.default_timer() - s3
+    print(f'Time Fermat test took to execute: {time}\n')
+    
+    
