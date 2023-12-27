@@ -10,7 +10,8 @@ def print_primes_in_range(start, end):
         print_primes_in_range(start + 1, end)
         # checks if prime for start then increments until end is reached
     else: 
-        print('Limits are incorrect')
+        print('Limits are incorrect') #ERROR this line is printed with every execution
+        
         
 def isPrime(n, i = 2):
 
