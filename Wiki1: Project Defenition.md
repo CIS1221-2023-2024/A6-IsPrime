@@ -10,7 +10,7 @@ A prime number is a natural number greater than 1 that is divisible only by 1 an
 ## Project Aim
 This project delves into the vast nature of prime numbers, showcasing diverse methods to discover and apply them. From classical techniques like the Sieve of Eratosthenes to modern algorithms, it explores efficient ways of finding primes. 
 
-This project involves two languages: CSharp, managed by Jake, and Python, overseen by Jurgen. Each language will be implemented using two paradigms, iteratiion and recursion. The primary focus is on exploring variousexamples to efficiently discover prime numbers. The objective is to compare the performance of these two languages in handling prime number calculations by assessing their speed. The project aims to provide insights into the efficiency of different language-paradigm combinations when dealing with prime number computations.
+This project involves two languages: CSharp, managed by Jake, and Python, overseen by Jurgen. Each language will be implemented using two paradigms, iteration and recursion. The primary focus is on exploring variousexamples to efficiently discover prime numbers. The objective is to compare the performance of these two languages in handling prime number calculations by assessing their speed. The project aims to provide insights into the efficiency of different language-paradigm combinations when dealing with prime number computations.
 
 ![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/83dd9ea6-5816-40e1-a9e9-555d102592fc)
 
@@ -20,9 +20,9 @@ This is the foundation of the project. As the name suggests, it verifies whether
 concept remains consistent.
 ### Algorithm 2: All Primes Leading to a number
 This Algorithm will be given a number and it will display all the prime numbers before that given number.  
-### Algroithm 3: Find the nth Prime
+### Algorithm 3: Find the nth Prime
 This is a very interesting algorithm. It works similiar to algorithm 2 but with a twist. The number given will be the nth Prime, meaning if 10 was given, the 10th prime which would be 29 is displayed.
-### Algroithm 4: Prime Factors of a Number
+### Algorithm 4: Prime Factors of a Number
 This Algorithm will be given a number, and displays any factors of that number than are prime, meaning if 12 was given, 2 and 3 will be displayed.  
 ### Algorithm 5: All Prime numbers between 2 limits  
 This algorithm will be given 2 numbers, a lower limit, and an upper limit, The algorithm will then find every prime number between these 2 limits  
@@ -30,7 +30,7 @@ This algorithm will be given 2 numbers, a lower limit, and an upper limit, The a
 ![what-is-an-algorithm](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150073705/478a473c-16fa-463e-b62f-aed85c88bd44)
   
 ## Other Primality Algorithms
-There exist other primality algorithms that were discovered hundreds or even thousands of years ago, the 3 following Algoirthms will be referenced in this project:  
+There exist other primality algorithms that were discovered hundreds or even thousands of years ago, the 3 following Algorithms will be referenced in this project:  
 - Sieve of Eratosthenes 
 - Miller-Rabin Primality
 - Fermat Method
@@ -46,7 +46,7 @@ Think of any natural number that you want to check if it is probably prime, that
 - Step 2: Choose a (1 < a < n-1)
 Pick any number between 1 and n-1, that will be a
 - Step 3: Compute b<sub>0</sub> = a * m modn (b<sub>i</sub> = b<sub>i-1</sub><sup>2</sup>)  
-Work out a * m modulus n, if the answer is 1 or n-1, then it is probably prime, if the answer is neither we need to continue
+Work out a * m mod n, if the answer is 1 or n-1, then it is probably prime, if the answer is neither we need to continue
 b<sub>i</sub> = b<sub>i-1</sub><sup>2</sup> so then instead we do b<sub>2</sub> = b<sub>1</sub><sup>2</sup> mod n, if the answer is 1, then the number is composite, if the answer is n-1, then it is probably prime, and if it is neither, we apply the same step till we get 1 or n-1  
 
 ### Fermat Method 
