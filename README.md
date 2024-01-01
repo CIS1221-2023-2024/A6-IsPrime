@@ -16,3 +16,7 @@ We hope you find our code satisfactory.
 ## How to run the programs 
 Jurgen's Projects (Python) are written using VS Code, so all that is needed is to open the .py files using VS Code  
 Jake's Projects (C#) are written using VS. So make sure to read the ReadMe in the CSharp Folders to understand how to see and run the code :)
+
+## Wiki Page
+
+[Wiki](Wiki_p1.md)
