@@ -1,14 +1,15 @@
-def is_prime(num): #function that checks if number in parameter entered is a prime
+def is_prime(num,i=2): #function that checks if number in parameter entered is a prime
     
-    for x in range(2, num): #loops from 2 up to number entered - 1 
-        
-        if num % x == 0: #checks if the number entered is perfectly divisible by x thats iterating up to num-1           
+    if num == 1: #1 is not prime
+        return False
+    
+    while i**2 <= num: #if num is not prime, it must have a divisor smaller than or equal to its square root
+
+        if num % i == 0: #Checks if num is divisible by i 
             return False
-    
-    if num == 1: 
-        return False 
-    
-    return True 
+        i += 1 #Incrementing i
+
+    return True #if i squared is greater than num, then num has to be prime
 
 def all_primes_up_to(max_num):
 
