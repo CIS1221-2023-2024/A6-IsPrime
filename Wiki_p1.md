@@ -52,3 +52,31 @@ b<sub>i</sub> = b<sub>i-1</sub><sup>2</sup> so then instead we do b<sub>2</sub> 
 ### Fermat Method 
 The Fermat method was discovered by Pierre de Fermat in 1640, it states that if p is prime and a is not divisible by p, then a<sup>p-1</sup> ≡ 1 mod p  
 Think of any natural number that you want to check if it is probably prime, that will be p, now think of another number that is not divisible by p, that will be a, if a<sup>p-1</sup> ≡ 1 mod p holds true, then p is probably prime
+
+## Approaches for prime checking
+The 2 approaches that will be referenced are the following:
+- Brute Force approach
+- O(√N) method
+
+### Brute Force approach
+The brute force approach is a very simple method to calculate if a number is prime or not.  
+It follows the basic mathematical principle of prime numbers, it checks if any given number is perfectly divisble by any number larger than 1 but smaller than itself. While this method works in finding prime numbers, it is very time inefficient when given a large number such as 1 million. This method is faster when the input is very small, however it is much slower when given large numbers. This method has a Big O Notation of O(n) since it will loop for the same ammount as the number provided, this means the time taken to execute this method is directly proportional to the number's size
+
+Code Snippet:  
+![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/6b456c8d-b6b8-44f5-a965-e97da187cd5b)
+
+FlowChart:  
+![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/d2dc415c-cf11-4780-95cc-129d7bb7704b)
+
+### O(√N) method
+The O(√N) method is similar to the brute force approach, however it instead follows the theorem that if a number is composite (not prime), it must have a divisor that is smaller or equal to its square root. This method is faster and more efficient than the brute force method, especially when given large numbers as instead of looping up to n, it only loops up to its square root. Like its name suggests This method has a Big O Notation of O(√N).
+
+Code Snippet:  
+![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/14d9faf7-9875-4e95-8cbc-d9e57c9fa653)
+
+FlowChart:  
+![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/f435da86-547d-4297-bfd4-2c418e44b7db)
+
+### Big O Notation Comparison  
+![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/996645c0-bab8-4c5c-85d7-c39a69f39b93)
+
