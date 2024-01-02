@@ -1,6 +1,6 @@
 def is_prime(num,i=2): #function that checks if number in parameter entered is a prime
     
-    if num == 1: #1 is not prime
+    if num <= 1: #Anything smaller than 1 is not prime
         return False
     
     while i**2 <= num: #if num is not prime, it must have a divisor smaller than or equal to its square root
