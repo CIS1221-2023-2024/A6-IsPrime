@@ -3,3 +3,8 @@ To Access Code  IsPrimeRecursiveCSharp -> IsPrimeRecursiveCSharp -> Program.cs
 If you are using Visual Studio not Vistual Studio Code, Download whole file and then run the IsPrimeRecursiveCSharp.sln
 
 If you are using Visual Studio Code Run Program.cs from step 1
+
+(Note) If you are using Visual Studio Code, unless you have prior knowledge, you will not be able to run the code normally. 
+Unless you want to install extentions and modules and connect the location of the file, I reccomend running on just Visual Studio 
+All it takes is to open the .sln and click the green arrow, simple as that.
+
