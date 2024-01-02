@@ -60,7 +60,7 @@ The 2 approaches that will be referenced are the following:
 
 ### Brute Force approach
 The brute force approach is a very simple method to calculate if a number is prime or not.  
-It follows the basic mathematical principle of prime numbers, it checks if any given number is perfectly divisble by any number larger than 1 but smaller than itself. While this method works in finding prime numbers, it is very time inefficient when given a large number such as 1 million. This method is faster when the input is very small, however it is much slower when given large numbers. This method has a Big O Notation of O(n) since it will loop for the same ammount as the number provided, this means the time taken to execute this method is directly proportional to the number's size
+It follows the basic mathematical principle of prime numbers, it checks if any given number is perfectly divisble by any number larger than 1 but smaller than itself. While this method works in finding prime numbers, it is very time inefficient when given a large number such as 1153 or 601831. This method is as efficient when working with small numbers or with non primes that have small divisors, however it is much slower when given large numbers, especially if they are prime. This method has a Big O Notation of O(n) since it will loop for the same ammount as the number provided (Given the number is prime), this means the time taken to execute this method is directly proportional to the number's size
 
 Code Snippet:  
 ![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/6b456c8d-b6b8-44f5-a965-e97da187cd5b)
@@ -72,11 +72,17 @@ FlowChart:
 The O(√N) method is similar to the brute force approach, however it instead follows the theorem that if a number is composite (not prime), it must have a divisor that is smaller or equal to its square root. This method is faster and more efficient than the brute force method, especially when given large numbers as instead of looping up to n, it only loops up to its square root. Like its name suggests This method has a Big O Notation of O(√N).
 
 Code Snippet:  
-![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/14d9faf7-9875-4e95-8cbc-d9e57c9fa653)
+![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/8a285013-c686-4026-898a-bc852d157fc5)
 
 FlowChart:  
 ![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/f435da86-547d-4297-bfd4-2c418e44b7db)
 
-### Big O Notation Comparison  
+### Time Complexity
+
+Big O Notation Comparison  
 ![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/996645c0-bab8-4c5c-85d7-c39a69f39b93)
 
+When given either very small numbers such as 1, 7, 17 etc... both methods execute in a very similar time frame at around 2-4 μs (MicroSeconds), However this greatly changes when the values entered are large prime numbers.  
+For Example: When both methods are to check if the number 10069 is prime, the brute force method takes roughly 0.0003 seconds, while the square root method takes around 9 μs, so the square root method is ~ 3800% faster. The massive differene grows even bigger when even higher prime numbers are introduced 
+  
+![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/d03687ac-c314-49d2-a539-fdf34239e090)
