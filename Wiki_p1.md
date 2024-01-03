@@ -54,9 +54,10 @@ The Fermat method was discovered by Pierre de Fermat in 1640, it states that if 
 Think of any natural number that you want to check if it is probably prime, that will be p, now think of another number that is not divisible by p, that will be a, if a<sup>p-1</sup> ≡ 1 mod p holds true, then p is probably prime
 
 ## Approaches for prime checking
-The 2 approaches that will be referenced are the following:
+The 3 approaches that will be referenced are the following:
 - Brute Force approach
 - O(√N) method
+- sympy.isprime()
 
 ### Brute Force approach
 The brute force approach is a very simple method to calculate if a number is prime or not.  
@@ -77,12 +78,23 @@ Code Snippet:
 FlowChart:  
 ![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/f435da86-547d-4297-bfd4-2c418e44b7db)
 
+### sympy.isprime() (Python)
+Externally, this method is very simple. It involves importing the function isprime() from the module sympy. However internally it uses multiple techniques to work out of a number is prime. If its testing a small number, it uses a determenistic algorithm based on a list of already known prime numbers, if the number is large it switches to probabilistic primality testing using algorithms such as the previously mentioned algorithm, the Miller-Rabin test. If the import function is used outside of the function, it is a very fast way of finding primality, however if the import is placed within the function, it is significantly slower than the 2 other approaches. When using small numbers it has the big O notation of O(√N), and when the numbers are large it has the big O Notation of O(Log<sup>3</sup>(n)).  
+**Note:** For the sake of the comparison, we will assume that the import is to be placed outside of the function  
+  
+Code Snippet:  
+![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/214ae723-7add-4f74-a4af-d4c5940331de)
+
 ### Time Complexity
 
-Big O Notation Comparison  
-![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/996645c0-bab8-4c5c-85d7-c39a69f39b93)
-
-When given either very small numbers such as 1, 7, 17 etc... both methods execute in a very similar time frame at around 2-4 μs (MicroSeconds), However this greatly changes when the values entered are large prime numbers.  
-For Example: When both methods are to check if the number 10069 is prime, the brute force method takes roughly 0.0003 seconds, while the square root method takes around 9 μs, so the square root method is ~ 3800% faster. The massive differene grows even bigger when even higher prime numbers are introduced 
+When given either very small numbers such as 1, 7, 17 etc... all methods execute in a very similar time frame at around 2-4 μs (MicroSeconds), However this greatly changes when the values entered are large prime numbers.  
+For Example: When the methods are to check if the number 10069 is prime, the brute force method takes roughly 0.0003 seconds, while the square root method takes around 9 μs, and the sympy.isprime() takes around 7 μs so the square root method is ~ 3800% faster than the brute force method and the sympy.isprime() is ~ 4300% faster than the brute force method and ~ 78% faster than the O(√N) method. The massive difference grows even larger when even higher prime numbers are introduced  
   
-![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/d03687ac-c314-49d2-a539-fdf34239e090)
+Big O Notation Comparison  
+  
+![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/dfb9f9c9-a651-46c3-93be-f6d25d0c36b4)
+  
+Execution Times:  
+  
+![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/05bff409-bde8-4d42-b223-5398fa64fbfe)
+
