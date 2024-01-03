@@ -19,6 +19,6 @@ Jake's Projects (C#) are written using VS. So make sure to read the ReadMe in th
 
 ## Wiki Pages
 In here You can find all the pages of the wiki  
-[Wiki Page 1](Wiki_p1.md)
-[Wiki Page 2](Wiki_p2.md)
+[Wiki Page 1](Wiki_p1.md)  
+[Wiki Page 2](Wiki_p2.md)  
 [Wiki Page 3](Wiki_p3.md)
