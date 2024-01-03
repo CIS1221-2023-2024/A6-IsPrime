@@ -17,6 +17,8 @@ We hope you find our code satisfactory.
 Jurgen's Projects (Python) are written using VS Code, so all that is needed is to open the .py files using VS Code  
 Jake's Projects (C#) are written using VS. So make sure to read the ReadMe in the CSharp Folders to understand how to see and run the code :)
 
-## Wiki Page
-
-[Wiki](Wiki_p1.md)
+## Wiki Pages
+In here You can find all the pages of the wiki  
+[Wiki Page 1](Wiki_p1.md)
+[Wiki Page 2](Wiki_p2.md)
+[Wiki Page 3](Wiki_p3.md)
