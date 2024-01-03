@@ -3,7 +3,7 @@ def is_prime(num,i=2): #function that checks if number in parameter entered is a
     if num <= 1: #Anything smaller than 1 is not prime
         return False
     
-    while i**2 <= num: #if num is not prime, it must have a divisor smaller than or equal to its square root
+    while i*i <= num: #if num is not prime, it must have a divisor smaller than or equal to its square root
 
         if num % i == 0: #Checks if num is divisible by i 
             return False
@@ -16,7 +16,7 @@ def all_primes_up_to(max_num):
     Primes_List = [] #initializing the list of primes up till a number
     for num in range(2,max_num+1): # loops from 2 till the number entered
 
-        if is_prime(num) == True:               
+        if is_prime(num):               
             Primes_List.append(num) #adds the number in the list
                  
     return Primes_List #returns the list of all the primes
@@ -77,7 +77,7 @@ def menu(option = 0):
             number = is_int(input("Enter number that you want to find the prime numbers up to: "))
             print(f'All primes up to {number} are: {all_primes_up_to(number)}')
     
-        elif option == 4: #
+        elif option == 4: 
             number = is_int(input("Enter nth number to list all primes up to it"))
             print(amount_of_primes(number))
 
@@ -94,7 +94,7 @@ def menu(option = 0):
 
 def is_int(num): #function to check if an entered number is an integer
 
-    while isinstance(num, int) == False: #checks if num is not an integer
+    while not isinstance(num, int): #checks if num is not an integer
 
         try: #tries to run the following code
                num = int(num)
