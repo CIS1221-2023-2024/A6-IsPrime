@@ -1,4 +1,5 @@
 # My take on the original Python Recursive program file uploaded by team 
+import timeit
 
 def isPrime(n, i = 2):
     try:
@@ -17,7 +18,10 @@ def isPrime(n, i = 2):
     return isPrime(n, i + 1)
 
 def prime_factors(n, counter = 2, list_of_primes = None): #shows all prime factors of a given number
-        
+
+     if n <= 1:
+        return None
+
      if list_of_primes == None: # list is reset per loop in the menu
          list_of_primes = []
 
@@ -31,6 +35,9 @@ def prime_factors(n, counter = 2, list_of_primes = None): #shows all prime facto
 
 def all_primes_up_to(n, counter=2, list_of_primes = None): #shows you a list of all prime numbers under n
 
+    if n <= 1:
+        return None
+
     if list_of_primes == None: # the list is reset per loop in the menu
          list_of_primes = []
 
@@ -42,8 +49,11 @@ def all_primes_up_to(n, counter=2, list_of_primes = None): #shows you a list of 
 
     return all_primes_up_to(n, counter +1, list_of_primes) #returns the method but incremen
 
-def nth_prime(n, counter = 2, list_of_primes = [],):   
-    
+def nth_prime(n, counter = 2, list_of_primes = None,):   
+
+     if list_of_primes == None: # the list is reset per loop in the menu
+         list_of_primes = []
+
     #checks whether there are as many values in the list as given by n
      if len(list_of_primes) == n: 
          return list_of_primes[n-1] # returns the last prime
@@ -53,7 +63,7 @@ def nth_prime(n, counter = 2, list_of_primes = [],):
           if isPrime(counter) == True: # checks if the value in counter is a prime
                list_of_primes.append(counter) #adds counter to the list
           
-     return nth_prime(n,counter + 1) # recursive call
+     return nth_prime(n,counter + 1,list_of_primes) # recursive call
 
 def primes_in_range(start, end, list_of_primes = None):
     
@@ -62,7 +72,7 @@ def primes_in_range(start, end, list_of_primes = None):
 
     if start>end: #Checks if the loop exceeds the upper limit
         return list_of_primes
-        
+
     if start <= end:
         if isPrime(start):
             list_of_primes.append(start)
@@ -78,19 +88,23 @@ def menu(option = 0):
         if option == 1: #if 1 is entered the following code is to be executed
 
             number = is_int(input("Enter number you want to check if is prime: "))
-            print(isPrime(number))
+
+            if isPrime(number):
+                print(f'{number} is prime.')
+            else: 
+                print(f'{number} is not prime.')
 
         elif option == 2: # option choice
             number = is_int(input("Enter number to find its prime factors: "))
-            print(prime_factors(number))
+            print(f'Prime factors of {number} are: {prime_factors(number)}')
             
         elif option == 3: # option choice
             number = is_int(input("Enter number you want to find the prime numbers up to it: "))
-            print(all_primes_up_to(number))
+            print(f'All primes up to {number} are: {all_primes_up_to(number)}')
     
         elif option == 4: # option choice
             number = is_int(input("Enter the nth position: "))
-            print(nth_prime(number))
+            print(f'The {number}th prime number is: {nth_prime(number)}')
             
         elif option == 5:
             lower_limit = is_int((input("Enter the lower limit: ")))
@@ -98,9 +112,7 @@ def menu(option = 0):
             
             if(lower_limit > upper_limit):
                 print('Incorrect Values inputted.')
-                menu()
-            print(f"Prime numbers between {lower_limit} and {upper_limit}:")
-            print(primes_in_range(lower_limit, upper_limit))
+            print(f'Primes between {lower_limit} and {upper_limit} are {primes_in_range(lower_limit, upper_limit)}') 
 
         elif option == 6:
             print("Exiting program...") #exits the loop, program comes to a halt
@@ -121,3 +133,49 @@ def is_int(num): # check if input number is an integer
     return num
 
 menu()
+
+def time_check(n): #Function to test the execution times of every algorithm
+
+    # Finding time for isPrime
+    start_time = timeit.default_timer()
+    isPrime(n)
+    final_time = timeit.default_timer() - start_time
+
+    
+    print(f"The isPrime algorithm with n = {n} and using iteration took: ", final_time)
+
+    
+    # Finding time for prime_factors
+    start_time = timeit.default_timer()
+    prime_factors(n)
+    final_time = timeit.default_timer() - start_time
+
+    print(f"The prime_factors algorithm with n = {n} and using iteration took: ", final_time)
+
+    # Finding time for all_primes_up_to
+    start_time = timeit.default_timer()
+    all_primes_up_to(n)
+    final_time = timeit.default_timer() - start_time
+
+    
+    print(f"The all_primes_up_to algorithm with n = {n} and using iteration took: ", final_time)
+
+    
+    # Finding time for nth_prime
+    start_time = timeit.default_timer()
+    nth_prime(n)
+    final_time = timeit.default_timer() - start_time
+
+    print(f"The nth_prime algorithm with n = {n} and using iteration took: ", final_time)
+     
+
+    # Finding time for primes_in_range
+    start_time = timeit.default_timer()
+    primes_in_range(0,n) #Assume lower limit is 0
+    final_time = timeit.default_timer() - start_time
+
+    print(f"The primes_in_range algorithm with n = {n} and using iteration took: ", final_time)
+    
+
+#n = int(input("Enter number"))
+#time_check(n)
