@@ -1,0 +1,7 @@
+C:\Users\jakca\OneDrive\Desktop\CSharp\OtherPrimalityMethodsCSharp\OtherPrimalityMethodsCSharp\bin\Debug\OtherPrimalityMethodsCSharp.exe.config
+C:\Users\jakca\OneDrive\Desktop\CSharp\OtherPrimalityMethodsCSharp\OtherPrimalityMethodsCSharp\bin\Debug\OtherPrimalityMethodsCSharp.exe
+C:\Users\jakca\OneDrive\Desktop\CSharp\OtherPrimalityMethodsCSharp\OtherPrimalityMethodsCSharp\bin\Debug\OtherPrimalityMethodsCSharp.pdb
+C:\Users\jakca\OneDrive\Desktop\CSharp\OtherPrimalityMethodsCSharp\OtherPrimalityMethodsCSharp\obj\Debug\OtherPrimalityMethodsCSharp.csproj.AssemblyReference.cache
+C:\Users\jakca\OneDrive\Desktop\CSharp\OtherPrimalityMethodsCSharp\OtherPrimalityMethodsCSharp\obj\Debug\OtherPrimalityMethodsCSharp.csproj.CoreCompileInputs.cache
+C:\Users\jakca\OneDrive\Desktop\CSharp\OtherPrimalityMethodsCSharp\OtherPrimalityMethodsCSharp\obj\Debug\OtherPrimalityMethodsCSharp.exe
+C:\Users\jakca\OneDrive\Desktop\CSharp\OtherPrimalityMethodsCSharp\OtherPrimalityMethodsCSharp\obj\Debug\OtherPrimalityMethodsCSharp.pdb
