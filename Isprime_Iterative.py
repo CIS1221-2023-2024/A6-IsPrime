@@ -33,7 +33,7 @@ def find_all_prime_factors(max):
 
     return List_of_prime_factors
 
-def amount_of_primes(size, i = 2): #i is 2 since 2 is the smallest prime number possible
+def nth_prime(size, i = 2): #i is 2 since 2 is the smallest prime number possible
 
     List_of_primes = [] #initializing the list of primes
 
@@ -44,7 +44,7 @@ def amount_of_primes(size, i = 2): #i is 2 since 2 is the smallest prime number 
         
         i += 1 #increments i
 
-    return List_of_primes
+    return List_of_primes[-1]
 
 def primes_in_range(start, end):
     
@@ -63,7 +63,7 @@ def menu(option = 0):
 
     while(option != 6): #loops until exit is chosen
 
-        option = is_int(input("\n1. Check if number is prime\n2. Find all prime factors of a number\n3. Find every prime number up to ...\n4. Find a given number of n primes\n5. Find primes in range\n6. Exit \n"))   
+        option = is_int(input("\n1. Check if number is prime\n2. Find all prime factors of a number\n3. Find the nth prime ...\n4. Find a given number of n primes\n5. Find primes in range\n6. Exit \n"))   
         # input ensured to be an integer
         
         if option == 1: #if 1 is entered the following code is to be executed
@@ -85,8 +85,8 @@ def menu(option = 0):
             print(f'All primes up to {number} are: {all_primes_up_to(number)}')
     
         elif option == 4: 
-            number = is_int(input("Enter nth number to list all primes up to it"))
-            print(amount_of_primes(number))
+            number = is_int(input("Enter the nth prime you want to find"))
+            print(f'The {number}th prime is: {nth_prime(number)}')
 
         elif option == 5:
             low = is_int(input('Enter lower range.\n'))
@@ -123,7 +123,7 @@ def time_check(n): #Function to test the execution times of every algorithm
 
     print(f"The is_prime algorithm with n = {n} and using iteration took: ", final_time)
 
-    # Finding time for find_all_primes
+    # Finding time for find_all_prime_factors
     start_time = timeit.default_timer()
     find_all_prime_factors(n)
     final_time = timeit.default_timer() - start_time
@@ -137,12 +137,12 @@ def time_check(n): #Function to test the execution times of every algorithm
 
     print(f"The all_primes_up_to algorithm with n = {n} and using iteration took: ", final_time)
 
-    # Finding time for amount_of_primes
+    # Finding time for nth_prime
     start_time = timeit.default_timer()
-    amount_of_primes(n)
+    nth_prime(n)
     final_time = timeit.default_timer() - start_time
 
-    print(f"The amount_of_primes algorithm with n = {n} and using iteration took: ", final_time)
+    print(f"The nth_prime algorithm with n = {n} and using iteration took: ", final_time)
 
     # Finding time for primes_in_range
     start_time = timeit.default_timer()
