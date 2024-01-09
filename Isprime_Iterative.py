@@ -1,3 +1,5 @@
+import timeit  #timeit module to check execution times
+
 def is_prime(num,i=2): #function that checks if number in parameter entered is a prime
     
     if num <= 1: #Anything smaller than 1 is not prime
@@ -46,6 +48,11 @@ def amount_of_primes(size, i = 2): #i is 2 since 2 is the smallest prime number 
 
 def primes_in_range(start, end):
     
+    if start > end: #Checks if limit is inccorect
+            print("Limits are incorrect")
+
+            return None
+
     primes = []
     for num in range(start, end + 1):
         if is_prime(num):
@@ -104,4 +111,45 @@ def is_int(num): #function to check if an entered number is an integer
                 num = input()
     return num
 
-menu() #executes the menu function
+ #executes the menu function
+menu()
+
+def time_check(n): #Function to test the execution times of every algorithm
+
+    # Finding time for is_prime
+    start_time = timeit.default_timer()
+    is_prime(n)
+    final_time = timeit.default_timer() - start_time
+
+    print(f"The is_prime algorithm with n = {n} and using iteration took: ", final_time)
+
+    # Finding time for find_all_primes
+    start_time = timeit.default_timer()
+    find_all_prime_factors(n)
+    final_time = timeit.default_timer() - start_time
+
+    print(f"The find_all_prime_factors algorithm with n = {n} and using iteration took: ", final_time)
+
+    # Finding time for all_primes_up_to
+    start_time = timeit.default_timer()
+    all_primes_up_to(n)
+    final_time = timeit.default_timer() - start_time
+
+    print(f"The all_primes_up_to algorithm with n = {n} and using iteration took: ", final_time)
+
+    # Finding time for amount_of_primes
+    start_time = timeit.default_timer()
+    amount_of_primes(n)
+    final_time = timeit.default_timer() - start_time
+
+    print(f"The amount_of_primes algorithm with n = {n} and using iteration took: ", final_time)
+
+    # Finding time for primes_in_range
+    start_time = timeit.default_timer()
+    primes_in_range(0,n) #Assume lower limit is 0
+    final_time = timeit.default_timer() - start_time
+
+    print(f"The primes_in_range algorithm with n = {n} and using iteration took: ", final_time)
+
+#n = int(input("Enter a number you want to check"))
+#time_check(n)
