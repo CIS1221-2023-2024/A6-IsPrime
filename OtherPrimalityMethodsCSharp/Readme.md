@@ -1,4 +1,4 @@
-To see code: IsPrimeIterativeCSharp -> IsPrimeIterative -> Progeram.cs
+To see code: OtherPrimalityMethodsCSharp -> OtherPrimalityMethodsCSharp -> Progeram.cs
 
 If you are using Visual Studio not Vistual Studio Code, Download whole file and then run the IsPrimeIterative.sln
 
