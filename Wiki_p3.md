@@ -66,10 +66,15 @@ As shown from the previous algorithms, the iteration came out on top with speeds
 ![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/0964151c-74f5-4cfd-a0b8-9bda2a7837f1)
 
 ### Memory Used
+The memory profiler module was used to calculate the memory used by the isprime algorithms. A profile was created to check the memory used  
+All the algorithms (Iterative, Recursive, Millar-Rabin and Fermat Method) all use roughly 23Mb
+![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/0d082eaf-a3c2-444e-b2a1-b8d75c35cfed)
 
 ### Conclusion 
-
-
+For finding prime numbers, Iterative programming is not only much faster than Recursive programming, but it also is able to execute with much larger numbers.  
+The Millar-Rabin also proved to be very fast and efficient when it came to checking the primality of very large numbers with over 30-digits.  
+The Sieve Of Eratosthenes also proved to be fast and efficient when it came to finding a list of prime numbers when the nuber given was large.  
+Memory was not so important as all the functions used roughly the same amount of memory to execute 
 
 ## Comparison within C#
 
