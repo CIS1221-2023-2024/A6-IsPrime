@@ -4,6 +4,19 @@ Testing Edge Cases is when extreme or unusual inputs are entered to see how the 
 The breaking point of the program is when the input entered is so large that the program cannot handle executing as it would be beyond its capabilities, testing the breaking point is important, as it gives us a clear limit to how far the program can go
 
 # Edge Cases
+### Python
+The following were tested:
+- Negative numbers in Algorithm 1 (correctly identifies anything negative as not prime)
+- Negative numbers in other Algorithms (Outputs "Number has to be greater than 0")
+- 0 in algorithm 1 (correctly identifies 0 as not prime)
+- 0 in other algorithms (Outputs "Number has to be greater than 0")
+- String (outputs "The value you entered is not an integer, please enter a valid integer")
+- floating point number (Outputs "The value you entered is not an integer, please enter a valid integer")
+- Smallest prime 2 (Correctly identifies as prime)
+- Equal limits in algorithm 5 (if the limit is prime, it will correctly list the number, However, if the number is not prime, it will show an empty list)
+- Reversed limits in algorithm 5 (Outputs "Limits are incorrect")
+
+
 
 # Breaking Point
 The breaking point for the following was tested
