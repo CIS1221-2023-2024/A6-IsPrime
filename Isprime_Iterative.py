@@ -15,6 +15,10 @@ def is_prime(num,i=2): #function that checks if number in parameter entered is a
 
 def all_primes_up_to(max_num):
 
+    if max_num <= 0: #nth has to be greater than 0
+        print("Number has to be greater than 0")
+        return None
+
     Primes_List = [] #initializing the list of primes up till a number
     for num in range(2,max_num+1): # loops from 2 till the number entered
 
@@ -24,6 +28,10 @@ def all_primes_up_to(max_num):
     return Primes_List #returns the list of all the primes
 
 def find_all_prime_factors(max):
+
+    if max <= 0: #has to be greater than 0
+        print("Number has to be greater than 0")
+        return None
 
     List_of_prime_factors = []
     for num in range(2,max):
@@ -35,9 +43,10 @@ def find_all_prime_factors(max):
 
 def nth_prime(size, i = 2): #i is 2 since 2 is the smallest prime number possible
 
-    if size == 0: #there is no 0th prime
+    if size <= 0: #nth has to be greater than 0
+        print("Number has to be greater than 0")
         return None
-
+    
     List_of_primes = [] #initializing the list of primes
 
     while len(List_of_primes) < size: #will keep looping till there are as many values in the list as indicated by size
@@ -81,15 +90,18 @@ def menu(option = 0):
 
         elif option == 2: 
             number = is_int(input("Enter number to find its prime factors: "))
-            print(f'Prime factors of {number} are: {find_all_prime_factors(number)}')
+            if find_all_prime_factors(number) != None:
+                print(f'Prime factors of {number} are: {find_all_prime_factors(number)}')
 
         elif option == 3: 
             number = is_int(input("Enter number that you want to find the prime numbers up to: "))
-            print(f'All primes up to {number} are: {all_primes_up_to(number)}')
+            if all_primes_up_to(number) != None:
+                print(f'All primes up to {number} are: {all_primes_up_to(number)}')
     
         elif option == 4: 
             number = is_int(input("Enter the nth prime you want to find"))
-            print(f'The {number}th prime is: {nth_prime(number)}')
+            if nth_prime(number) != None:
+                print(f'The {number}th prime is: {nth_prime(number)}')
 
         elif option == 5:
             low = is_int(input('Enter lower range.\n'))
