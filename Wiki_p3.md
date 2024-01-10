@@ -62,7 +62,7 @@ When working with small numbers, the Sieve Of Eratosthenes is slower than with i
 ![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/d3ce63c2-f8c7-4a8c-b566-bb032e9da824)
 
 ### Nth prime
-As shown from the previous algorithms, the iteration came out on top with speeds twice as fast in this case, and the recursion stopped working after the number 53
+As shown from the previous algorithms, the iteration came out on top with speeds twice as fast in this case, and the recursion stopped working after the number 53  
 ![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/0964151c-74f5-4cfd-a0b8-9bda2a7837f1)
 
 ### Memory Used
