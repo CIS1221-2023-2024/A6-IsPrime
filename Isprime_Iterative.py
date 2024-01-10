@@ -35,6 +35,9 @@ def find_all_prime_factors(max):
 
 def nth_prime(size, i = 2): #i is 2 since 2 is the smallest prime number possible
 
+    if size == 0: #there is no 0th prime
+        return None
+
     List_of_primes = [] #initializing the list of primes
 
     while len(List_of_primes) < size: #will keep looping till there are as many values in the list as indicated by size
