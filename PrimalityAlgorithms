@@ -2,7 +2,8 @@ import timeit
 import random 
 
 '''I have created this file to indicate some important mathematical algorithms when dealing with prime numbers that go further than just the
-recursive and iterative paradigms, and that they should be included somewhere in the project.
+recursive and iterative paradigms, and that they should be included somewhere in the project. The team can also compare the appropriate algorithms
+that they constructed in the recursive and iterative algorithms to these functions, in terms of edge cases, execution time, memory usage, complexity...
 These are known as the Sieve of Eratosthenes, Miller-Rabin, and Fermat primality test.
 
 *Sieve of Eratosthenes: A method from 276BC yet it is simple and efficient. It finds primes by going through a list of possible numbers

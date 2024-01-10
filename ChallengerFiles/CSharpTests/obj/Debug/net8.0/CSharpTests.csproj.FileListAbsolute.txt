@@ -1,0 +1,15 @@
+C:\Users\Shani\Documents\GitHub\A6-IsPrime\ChallengerFiles\CSharpTests\obj\Debug\net8.0\CSharpTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shani\Documents\GitHub\A6-IsPrime\ChallengerFiles\CSharpTests\obj\Debug\net8.0\CSharpTests.AssemblyInfoInputs.cache
+C:\Users\Shani\Documents\GitHub\A6-IsPrime\ChallengerFiles\CSharpTests\obj\Debug\net8.0\CSharpTests.AssemblyInfo.cs
+C:\Users\Shani\Documents\GitHub\A6-IsPrime\ChallengerFiles\CSharpTests\obj\Debug\net8.0\CSharpTests.csproj.CoreCompileInputs.cache
+C:\Users\Shani\Documents\GitHub\A6-IsPrime\ChallengerFiles\CSharpTests\obj\Debug\net8.0\CSharpTests.sourcelink.json
+C:\Users\Shani\Documents\GitHub\A6-IsPrime\ChallengerFiles\CSharpTests\bin\Debug\net8.0\CSharpTests.exe
+C:\Users\Shani\Documents\GitHub\A6-IsPrime\ChallengerFiles\CSharpTests\bin\Debug\net8.0\CSharpTests.deps.json
+C:\Users\Shani\Documents\GitHub\A6-IsPrime\ChallengerFiles\CSharpTests\bin\Debug\net8.0\CSharpTests.runtimeconfig.json
+C:\Users\Shani\Documents\GitHub\A6-IsPrime\ChallengerFiles\CSharpTests\bin\Debug\net8.0\CSharpTests.dll
+C:\Users\Shani\Documents\GitHub\A6-IsPrime\ChallengerFiles\CSharpTests\bin\Debug\net8.0\CSharpTests.pdb
+C:\Users\Shani\Documents\GitHub\A6-IsPrime\ChallengerFiles\CSharpTests\obj\Debug\net8.0\CSharpTests.dll
+C:\Users\Shani\Documents\GitHub\A6-IsPrime\ChallengerFiles\CSharpTests\obj\Debug\net8.0\refint\CSharpTests.dll
+C:\Users\Shani\Documents\GitHub\A6-IsPrime\ChallengerFiles\CSharpTests\obj\Debug\net8.0\CSharpTests.pdb
+C:\Users\Shani\Documents\GitHub\A6-IsPrime\ChallengerFiles\CSharpTests\obj\Debug\net8.0\CSharpTests.genruntimeconfig.cache
+C:\Users\Shani\Documents\GitHub\A6-IsPrime\ChallengerFiles\CSharpTests\obj\Debug\net8.0\ref\CSharpTests.dll
