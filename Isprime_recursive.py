@@ -51,6 +51,9 @@ def all_primes_up_to(n, counter=2, list_of_primes = None): #shows you a list of 
 
 def nth_prime(n, counter = 2, list_of_primes = None,):   
 
+     if n == 0: #0th prime doesnt exist
+        return None
+
      if list_of_primes == None: # the list is reset per loop in the menu
          list_of_primes = []
 
@@ -142,7 +145,7 @@ def time_check(n): #Function to test the execution times of every algorithm
     final_time = timeit.default_timer() - start_time
 
     
-    print(f"The isPrime algorithm with n = {n} and using iteration took: ", final_time)
+    print(f"The isPrime algorithm with n = {n} and using Recursion took: ", final_time)
 
     
     # Finding time for prime_factors
@@ -150,7 +153,7 @@ def time_check(n): #Function to test the execution times of every algorithm
     prime_factors(n)
     final_time = timeit.default_timer() - start_time
 
-    print(f"The prime_factors algorithm with n = {n} and using iteration took: ", final_time)
+    print(f"The prime_factors algorithm with n = {n} and using Recursion took: ", final_time)
 
     # Finding time for all_primes_up_to
     start_time = timeit.default_timer()
@@ -158,7 +161,7 @@ def time_check(n): #Function to test the execution times of every algorithm
     final_time = timeit.default_timer() - start_time
 
     
-    print(f"The all_primes_up_to algorithm with n = {n} and using iteration took: ", final_time)
+    print(f"The all_primes_up_to algorithm with n = {n} and using Recursion took: ", final_time)
 
     
     # Finding time for nth_prime
@@ -166,7 +169,7 @@ def time_check(n): #Function to test the execution times of every algorithm
     nth_prime(n)
     final_time = timeit.default_timer() - start_time
 
-    print(f"The nth_prime algorithm with n = {n} and using iteration took: ", final_time)
+    print(f"The nth_prime algorithm with n = {n} and using Recursion took: ", final_time)
      
 
     # Finding time for primes_in_range
@@ -174,7 +177,7 @@ def time_check(n): #Function to test the execution times of every algorithm
     primes_in_range(0,n) #Assume lower limit is 0
     final_time = timeit.default_timer() - start_time
 
-    print(f"The primes_in_range algorithm with n = {n} and using iteration took: ", final_time)
+    print(f"The primes_in_range algorithm with n = {n} and using Recursion took: ", final_time)
     
 
 #n = int(input("Enter number"))
