@@ -94,7 +94,8 @@ def menu(option = 0):
         elif option == 5:
             low = is_int(input('Enter lower range.\n'))
             up = is_int(input('Enter upper range.\n'))
-            print(f'Primes between {low} and {up} are {primes_in_range(low, up)}') 
+            if primes_in_range(low, up) != None:
+                print(f'Primes between {low} and {up} are {primes_in_range(low, up)}') 
         
         elif option == 6:
             print('Exiting.')
