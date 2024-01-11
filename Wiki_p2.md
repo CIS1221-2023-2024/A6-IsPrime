@@ -60,7 +60,7 @@ This algorithm stays efficiant up till **7 digits**, **8 digits** take 5 seconds
 ### Python
 Since this algorithm required 2 numbers instead of 1, the lower limit is given to be 0 and the upper limit is the one to be tested. Due to this case, it works the same as algorithm 2. It reaches its limit when the number given is a **Lower 7 digit number** 
 ### C#
-Given a min of 0 to a max of a **8 digit number**, execution time took around 5 seconds (without displaying), with displaying it took 40 seconds. This means that for an efficiant execution time, **7 digits is best**
+Given a min of 0 to a max of an **8 digit number**, execution time took around 5 seconds (without displaying), with displaying it took 40 seconds. This means that for an efficiant execution time, **7 digits is best**
 
 ## Recursive algorithms
 ### Python
