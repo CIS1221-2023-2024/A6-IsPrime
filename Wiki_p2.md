@@ -35,12 +35,12 @@ The breaking point for the following was tested
 ### Python
 From the testing I performed, I found that iteration did not have a specific limit where it stopped working as it always kept computing while increasing the time taken to execute. To still find a "limit" I imposed a rule of 10-seconds, where a function could not take longer than 10 seconds to execute, if it did it would be over the "limit". 
 ### C#
-In iterative, there are really no limits on the paradigm itself but on the langauge its self.
+In iterative, there are really no limits on the paradigm itself but on the language its self.
 ## Algorithm 1 (Is prime)
 ### Python
 This algorithm could go up to the limits of Python itself when the number given is not prime, however, it reaches its "limit" when the prime number entered reaches the **17 digits** mark
 ### C#
-This algorithm reaches its limit when a number containing **11 digits** is entered and gives a overflow exception.
+This algorithm reaches its limit when a number containing **11 digits** is entered and gives an overflow exception.
 ## Algorithm 2 (All primes up to a number)
 ### Python
 Since this algorithm will have to check for primality for every single number between 2 up to the number given, the larger the number given, the longer it will take. It reaches its "limit" when the number given is a **Lower 7 digit number**
@@ -50,7 +50,7 @@ Similiar to the isPrime Algorithm, any number with **11 Digits** will fail, that
 ### Python
 Since the nth prime finds every prime number up to the number given and then returns the last value, it will have a lot of numbers to add to a list and therefore its limit is reached earlier than the other algorithms, it reaches its "limit" when the number given is a **Lower 6 digit number**
 ### C#
-After the **6th digit** any number with higher digit will take longer than 1 second whereas **6 digits** takes 0.3 seconds.
+After reaching the **six-digit** range, any number with more digits takes longer than one second to compute, while **six-digit** numbers take only 0.3 seconds."
 ## Algorithm 4 (Prime Factors)
 ### Python
 This algorithm while having to check for 2 criteria instead of just finding prime, was faster than most of the others. It reached its "limit" when the number given is a **Lower 9 digit number**
