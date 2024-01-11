@@ -122,6 +122,5 @@ The Fermat method reached its limit much quicker than the other isprime algorith
 ### C#
 This method reaches it's limit around **6 digits**
 
-
-#Conclusion
+# Conclusion
 When comparing the execution performance of iterative and other primality methods in both C# and Python, it is observed that they exhibit similar performance characteristics. However, a notable distinction arises when considering recursive implementations. C# tends to demonstrate a significantly higher breaking point in terms of recursion depth compared to Python. This discrepancy can be attributed to differences in how the two programming languages manage stack space during recursive function calls.
