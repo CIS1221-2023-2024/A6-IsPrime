@@ -43,7 +43,7 @@ Similiar to the isPrime Algorithm, any number with **10 Digits** will fail, that
 ### Python
 Since the nth prime finds every prime number up to the number given and then returns the last value, it will have a lot of numbers to add to a list and therefore its limit is reached earlier than the other algorithms, it reaches its "limit" when the number given is a **Lower 6 digit number**
 ### C#
-After the **6th digit** any number with higher digit will take longer than 1 second whereas **6 digits takes 0.3 seconds.
+After the **6th digit** any number with higher digit will take longer than 1 second whereas **6 digits** takes 0.3 seconds.
 ## Algorithm 4 (Prime Factors)
 ### Python
 This algorithm while having to check for 2 criteria instead of just finding prime, was faster than most of the others. It reached its "limit" when the number given is a **Lower 9 digit number**
