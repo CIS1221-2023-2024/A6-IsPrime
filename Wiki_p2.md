@@ -28,29 +28,32 @@ The breaking point for the following was tested
 ### Python
 From the testing I performed, I found that iteration did not have a specific limit where it stopped working as it always kept computing while increasing the time taken to execute. To still find a "limit" I imposed a rule of 10-seconds, where a function could not take longer than 10 seconds to execute, if it did it would be over the "limit". 
 ### C#
-
+In iterative, there are really no limits on the paradigm itself but on the langauge its self.
 ## Algorithm 1 (Is prime)
 ### Python
 This algorithm could go up to the limits of Python itself when the number given is not prime, however, it reaches its "limit" when the prime number entered reaches the **17 digits** mark
 ### C#
-
+This algorithm reaches its limit when a number containing **10 digits** is entered and gives a overflow exception.
 ## Algorithm 2 (All primes up to a number)
 ### Python
 Since this algorithm will have to check for primality for every single number between 2 up to the number given, the larger the number given, the longer it will take. It reaches its "limit" when the number given is a **Lower 7 digit number**
 ### C#
+Similiar to the isPrime Algorithm, any number with **10 Digits** will fail, that being said if a number has **9 digits** it will not fail but will take a great amount of time to display
 ## Algorithm 3 (Nth Prime)
 ### Python
 Since the nth prime finds every prime number up to the number given and then returns the last value, it will have a lot of numbers to add to a list and therefore its limit is reached earlier than the other algorithms, it reaches its "limit" when the number given is a **Lower 6 digit number**
 ### C#
+After the **6th digit** any number with higher digit will take longer than 1 second whereas **6 digits takes 0.3 seconds.
 ## Algorithm 4 (Prime Factors)
 ### Python
 This algorithm while having to check for 2 criteria instead of just finding prime, was faster than most of the others. It reached its "limit" when the number given is a **Lower 9 digit number**
 ### C#
+This algorithm stays efficiant up till **7 digits**, **8 digits** take 5 seconds or more, meaning this algorithm is faster than others.
 ## Algorithm 5 (Prime numbers between limits)
 ### Python
 Since this algorithm required 2 numbers instead of 1, the lower limit is given to be 0 and the upper limit is the one to be tested. Due to this case, it works the same as algorithm 2. It reaches its limit when the number given is a **Lower 7 digit number** 
 ### C#
-
+Given a min of 0 to a max of a **8 digit number**, execution time took around 5 seconds (without displaying), with displaying it took 40 seconds. This means that for an efficiant execution time, **7 digits is best**
 
 ## Recursive algorithms
 ### Python
