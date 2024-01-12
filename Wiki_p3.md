@@ -87,6 +87,9 @@ A Stopwatch Function has been Implimented to test each end every algorithm with 
 
 From this sheet, we can denote that the **fastest** algorithms belong to the **Miller-Robin** and the **Fermat** methods, achieving remarkable speeds as low as 0.0000001 seconds. In contrast, the **slowest** algorithm, Nth Prime, takes 11 seconds to complete. It's important to acknowledge that some records are omitted due to the recursive limit inherent in the language, preventing the function from iterating infinitely and impacting the inclusion of specific algorithmic records in the analysis. To add on, the data clearly demonstrates that recursive algorithms exhibit faster execution speeds than their iterative counterparts. However, it's unfortunate that recursive algorithms face limitations when handling larger numbers. In summary, recursion is advantageous for speed, while iteration is better suited for handling larger inputs.
 
+### Memory Used
+Using the Process.GetCurrentProcess Function, the memory used is calculated which ranges about **12** to **13** Mib throught out all paradigms and all algorithms which is almost half as much as python uses.
+![Screenshot 2024-01-12 122428](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150073705/50029cd1-b2d3-4803-967c-2cf76632498e)
 
 
 
