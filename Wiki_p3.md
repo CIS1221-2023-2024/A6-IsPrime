@@ -82,7 +82,7 @@ From this sheet, we can denote that the **fastest** algorithms belong to the **M
 For the task of finding prime numbers, Iterative programming not only outperforms Recursive programming in terms of speed but also demonstrates superior performance with significantly larger numbers.  
 The Millar-Rabin algorithm has proven to be exceptionally fast and efficient, particularly in checking the primality of numbers even after exceeding 30 digits.  
 Similarly, the Sieve Of Eratosthenes has demonstrated speed and efficiency, especially when generating a list of prime numbers for large input values.  
-Notably, memory usage is consistent across these methods, making it a less decisive factor in their comparison.
+Notably, memory usage is consistent across these methods, making it a less decisive factor in their comparison.To add on, the data clearly demonstrates that recursive algorithms exhibit faster execution speeds than their iterative counterparts. However, it's unfortunate that recursive algorithms face limitations when handling larger numbers. In summary, recursion is advantageous for speed, while iteration is better suited for handling larger inputs.
 
 ![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/ab7b378c-e3ec-4136-a3b3-15e22a50ad4b)
 
