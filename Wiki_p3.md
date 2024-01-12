@@ -89,6 +89,7 @@ From this sheet, we can denote that the **fastest** algorithms belong to the **M
 
 ### Memory Used
 Using the Process.GetCurrentProcess Function, the memory used is calculated which ranges about **12** to **13** Mib throught out all paradigms and all algorithms which is almost half as much as python uses.
+
 ![Screenshot 2024-01-12 122428](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150073705/50029cd1-b2d3-4803-967c-2cf76632498e)
 
 
