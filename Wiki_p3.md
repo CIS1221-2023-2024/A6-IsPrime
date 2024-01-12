@@ -75,6 +75,8 @@ All the algorithms (Iterative, Recursive, Millar-Rabin and Fermat Method) all us
 A Stopwatch Function has been Implimented to test each end every algorithm with multiple inputs representing Primes and not Primes. Inputs are similiar to Python to keep an accurate Comparison
 ![Screenshot 2024-01-12 105105](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150073705/dba77dd7-902f-4541-b3ec-18352babbe96)
 
+From this sheet, we can denote that the **fastest** algorithms belong to the **Miller-Robin** and the **Fermat** methods, achieving remarkable speeds as low as 0.0000001 seconds. In contrast, the **slowest** algorithm, Nth Prime, takes 11 seconds to complete. It's important to acknowledge that some records are omitted due to the recursive limit inherent in the language, preventing the function from iterating infinitely and impacting the inclusion of specific algorithmic records in the analysis.
+
 
 ### Conclusion 
 For the task of finding prime numbers, Iterative programming not only outperforms Recursive programming in terms of speed but also demonstrates superior performance with significantly larger numbers.  
