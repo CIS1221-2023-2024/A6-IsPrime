@@ -70,26 +70,22 @@ The memory profiler module was used to calculate the memory used by the isprime 
 All the algorithms (Iterative, Recursive, Millar-Rabin and Fermat Method) all use roughly 23Mb
 ![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/0d082eaf-a3c2-444e-b2a1-b8d75c35cfed)
 
-## Comparison with C#
-### Execution Speeds
-A Stopwatch Function has been Implimented to test each end every algorithm with multiple inputs representing Primes and not Primes. Inputs are similiar to Python to keep an accurate Comparison
-![Screenshot 2024-01-12 105105](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150073705/dba77dd7-902f-4541-b3ec-18352babbe96)
-
-From this sheet, we can denote that the **fastest** algorithms belong to the **Miller-Robin** and the **Fermat** methods, achieving remarkable speeds as low as 0.0000001 seconds. In contrast, the **slowest** algorithm, Nth Prime, takes 11 seconds to complete. It's important to acknowledge that some records are omitted due to the recursive limit inherent in the language, preventing the function from iterating infinitely and impacting the inclusion of specific algorithmic records in the analysis.
-
-
 ### Conclusion 
 For the task of finding prime numbers, Iterative programming not only outperforms Recursive programming in terms of speed but also demonstrates superior performance with significantly larger numbers.  
 The Millar-Rabin algorithm has proven to be exceptionally fast and efficient, particularly in checking the primality of numbers even after exceeding 30 digits.  
 Similarly, the Sieve Of Eratosthenes has demonstrated speed and efficiency, especially when generating a list of prime numbers for large input values.  
-Notably, memory usage is consistent across these methods, making it a less decisive factor in their comparison.To add on, the data clearly demonstrates that recursive algorithms exhibit faster execution speeds than their iterative counterparts. However, it's unfortunate that recursive algorithms face limitations when handling larger numbers. In summary, recursion is advantageous for speed, while iteration is better suited for handling larger inputs.
+Notably, memory usage is consistent across these methods, making it a less decisive factor in their comparison.
 
 ![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/ab7b378c-e3ec-4136-a3b3-15e22a50ad4b)
 
 ![image](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150345446/60e259b2-e95d-4f57-85fa-b5b2fad6ad9f)
 
 ## Comparison within C#
+### Execution Speeds
+A Stopwatch Function has been Implimented to test each end every algorithm with multiple inputs representing Primes and not Primes. Inputs are similiar to Python to keep an accurate Comparison
+![Screenshot 2024-01-12 105105](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150073705/dba77dd7-902f-4541-b3ec-18352babbe96)
 
+From this sheet, we can denote that the **fastest** algorithms belong to the **Miller-Robin** and the **Fermat** methods, achieving remarkable speeds as low as 0.0000001 seconds. In contrast, the **slowest** algorithm, Nth Prime, takes 11 seconds to complete. It's important to acknowledge that some records are omitted due to the recursive limit inherent in the language, preventing the function from iterating infinitely and impacting the inclusion of specific algorithmic records in the analysis.To add on, the data clearly demonstrates that recursive algorithms exhibit faster execution speeds than their iterative counterparts. However, it's unfortunate that recursive algorithms face limitations when handling larger numbers. In summary, recursion is advantageous for speed, while iteration is better suited for handling larger inputs.
 
 
 
