@@ -92,6 +92,9 @@ Using the Process.GetCurrentProcess Function, the memory used is calculated whic
 
 ![Screenshot 2024-01-12 122428](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150073705/50029cd1-b2d3-4803-967c-2cf76632498e)
 
+### Conclusion
+
+![BB](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150073705/fcc7477a-0aa8-4f66-b641-c3ea16ed9668)
 
 
 ## Comparison of Python vs C#  
