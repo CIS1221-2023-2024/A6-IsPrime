@@ -93,9 +93,12 @@ Using the Process.GetCurrentProcess Function, the memory used is calculated whic
 ![Screenshot 2024-01-12 122428](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150073705/50029cd1-b2d3-4803-967c-2cf76632498e)
 
 ### Conclusion
+In the presented bar charts, an examination reveals that, when evaluating the performance for the input value 1, the iterative algorithm exhibits the slowest execution time, while the Fermat algorithm demonstrates the fastest. **However, it is important to note that the bar chart representing the value 601831 has been altered for enhanced visual clarity and does not accurately reflect the corresponding execution times.**
+
+Specifically for the input value 601831, both the Fermat and Miller algorithms exhibit the fastest execution times, whereas the iterative algorithm persists as the slowest performer. It is worth acknowledging that the recursive method is constrained by its recursive limit, which results in data collection solely from a singular information source, as other sources surpass the recursive limit. Consequently, the recursive method's data gathering capabilities are limited to a singular source of information.
 
 ![BB](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150073705/fcc7477a-0aa8-4f66-b641-c3ea16ed9668)
-
+![BB2](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150073705/2bf63879-383f-4845-bb80-20f62635bb63)
 
 ## Comparison of Python vs C#  
 The results from both the Python and C# languages will be compared to find which language is superior when it comes to finding prime numbers  
