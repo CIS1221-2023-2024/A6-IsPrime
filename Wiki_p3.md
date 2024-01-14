@@ -100,7 +100,7 @@ Specifically for the input value 601831, both the Fermat and Miller algorithms e
 In short, the examination of bar charts indicates that Iterative has the slowest execution time, while Miller and Fermat algorithms perform exceptionally well. Recursive is effective for smaller numbers but becomes less efficient for larger inputs due to its recursive limit. Notably, Fermat stands out as the top performer for smaller numbers, whereas Miller excels for larger input values.
 
 ![BB](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150073705/fcc7477a-0aa8-4f66-b641-c3ea16ed9668)
-![BB2](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150073705/bc48b91f-93e0-4470-bd78-1ea0ad06b1a6)
+![BB4](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150073705/ea9caf9f-371f-4280-86cf-662d705537b7)
 **The chart below is the accurate execution speed of the number 601831**
 ![BB3](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150073705/a7740b74-45cb-4294-a9bd-f08e87d7f7b9)
 
