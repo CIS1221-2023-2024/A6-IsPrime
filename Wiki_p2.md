@@ -120,7 +120,7 @@ This algorithm's only limit is how much the int variable can hold digits (**whic
 ### Python
 The Fermat method reached its limit much quicker than the other isprime algorithms (excluding recursively). It reaches its "limit" when the number given reaches the **upper 6 digit** mark
 ### C#
-This method reaches it's limit around **6 digits**
+This method reaches it's limit around **6 digits**. **Note:** The Fermat primality test, while a useful probabilistic algorithm, may exhibit limitations when applied to numbers with a magnitude of around 5 to 6 digits. In some cases, prime numbers within this range could be erroneously labeled as composite (false negatives). However, it should be emphasized that the Fermat test tends to provide accurate results for numbers with five digits or fewer. For increased reliability in primality testing, especially for larger numbers, consideration of alternative algorithms such as the Miller-Rabin test
 
 # Conclusion
 When comparing the execution performance of iterative and other primality methods in both C# and Python, it is observed that they exhibit similar performance characteristics. However, a notable distinction arises when considering recursive implementations. C# tends to demonstrate a significantly higher breaking point in terms of recursion depth compared to Python. This discrepancy can be attributed to differences in how the two programming languages manage stack space during recursive function calls.
