@@ -95,10 +95,14 @@ Using the Process.GetCurrentProcess Function, the memory used is calculated whic
 ### Conclusion
 In the presented bar charts, an examination reveals that, when evaluating the performance for the input value 1, the iterative algorithm exhibits the slowest execution time, while the Fermat algorithm demonstrates the fastest. **However, it is important to note that the bar chart representing the value 601831 has been altered for enhanced visual clarity and does not accurately reflect the corresponding execution times.**
 
-Specifically for the input value 601831, both the Fermat and Miller algorithms exhibit the fastest execution times, whereas the iterative algorithm persists as the slowest performer. It is worth acknowledging that the recursive method is constrained by its recursive limit, which results in data collection solely from a singular information source, as other sources surpass the recursive limit. Consequently, the recursive method's data gathering capabilities are limited to a singular source of information.
+Specifically for the input value 601831, both the Fermat and Miller algorithms exhibit the fastest execution times, whereas the iterative algorithm persists as the slowest performer. It is worth acknowledging that the recursive method is constrained by its recursive limit, which results in data collection solely from a singular information source, as other sources surpass the recursive limit.
+
+In short, the examination of bar charts indicates that Iterative has the slowest execution time, while Miller and Fermat algorithms perform exceptionally well. Recursive is effective for smaller numbers but becomes less efficient for larger inputs due to its recursive limit. Notably, Fermat stands out as the top performer for smaller numbers, whereas Miller excels for larger input values.
 
 ![BB](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150073705/fcc7477a-0aa8-4f66-b641-c3ea16ed9668)
 ![BB2](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150073705/2bf63879-383f-4845-bb80-20f62635bb63)
+**The chart below is the accurate execution speed of the number 601831**
+![BB3](https://github.com/CIS1221-2023-2024/A6-IsPrime/assets/150073705/a7740b74-45cb-4294-a9bd-f08e87d7f7b9)
 
 ## Comparison of Python vs C#  
 The results from both the Python and C# languages will be compared to find which language is superior when it comes to finding prime numbers  
